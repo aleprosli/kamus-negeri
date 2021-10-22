@@ -68,9 +68,9 @@ class PerkataanKamusController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit(Perkataan $perkataan)
     {
-        return view('admin.perkataan_kamus.edit');
+        return view('admin.perkataan_kamus.edit',compact('perkataan'));
     }
 
     /**
