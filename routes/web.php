@@ -26,3 +26,5 @@ Route::get('/perkataan-kamus/index', [App\Http\Controllers\Admin\PerkataanKamusC
 Route::get('/perkataan-kamus/create', [App\Http\Controllers\Admin\PerkataanKamusController::class, 'create'])->name('perkataan_kamus:create');
 Route::get('/perkataan-kamus/edit/{perkataan}', [App\Http\Controllers\Admin\PerkataanKamusController::class, 'edit'])->name('perkataan_kamus:edit');
 Route::post('/perkataan-kamus/store', [App\Http\Controllers\Admin\PerkataanKamusController::class, 'store'])->name('perkataan_kamus:store');
+Route::post('/perkataan-kamus/update/{perkataan}', [App\Http\Controllers\Admin\PerkataanKamusController::class, 'update'])->name('perkataan_kamus:update');
+Route::get('/perkataan-kamus/delete/{perkataan}', [App\Http\Controllers\Admin\PerkataanKamusController::class, 'destroy'])->name('perkataan_kamus:destroy');
