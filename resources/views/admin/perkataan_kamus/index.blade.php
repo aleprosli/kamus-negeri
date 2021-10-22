@@ -19,6 +19,7 @@
                         <th scope="col">Maksud Ayat</th>
                         <th scope="col">Contoh Ayat</th>
                         <th scope="col">Maksud Ayat</th>
+                        <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -29,10 +30,13 @@
                           <td>{{ $perkataan->maksud_perkataan }}</td>
                           <td>{{ $perkataan->contoh_ayat }}</td>
                           <td>{{ $perkataan->maksud_ayat }}</td>
+                          <td><a href="{{ route('perkataan_kamus:edit',$perkataan) }}" type="button" class="btn btn-warning">Edit</a>
+                            <a href="{{ route('perkataan_kamus:index') }}" type="button" class="btn btn-danger">Delete</a></td>
                         </tr>
                       @endforeach
                     </tbody>
-                  </table>
+                  </table>                    
+
                 </div>
             </div>
 
