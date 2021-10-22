@@ -80,9 +80,16 @@ class PerkataanKamusController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Perkataan $perkataan)
     {
-        //
+        $perkataan->perkataan = $request->perkataan;
+        $perkataan->maksud_perkataan = $request->maksud_perkataan;
+        $perkataan->contoh_ayat = $request->contoh_ayat;
+        $perkataan->maksud_ayat = $request->maksud_ayat;
+
+        $perkataan->save();
+
+        return redirect()->route('perkataan_kamus:index');
     }
 
     /**
