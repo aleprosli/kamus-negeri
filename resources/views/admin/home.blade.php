@@ -11,6 +11,17 @@
                   Welcome to admin dashboard
                 </div>
             </div>
+
+            <br>
+
+            <div class="card">
+                <div class="card-header">Perkataan Kamus</div>
+
+                <div class="card-body">
+                    <a href="{{ route('perkataan_kamus:index') }}" type="button" class="btn btn-info">Index</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
