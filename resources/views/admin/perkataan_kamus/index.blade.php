@@ -31,7 +31,7 @@
                           <td>{{ $perkataan->contoh_ayat }}</td>
                           <td>{{ $perkataan->maksud_ayat }}</td>
                           <td><a href="{{ route('perkataan_kamus:edit',$perkataan) }}" type="button" class="btn btn-warning">Edit</a>
-                            <a href="{{ route('perkataan_kamus:index') }}" type="button" class="btn btn-danger">Delete</a></td>
+                            <a href="{{ route('perkataan_kamus:destroy',$perkataan) }}" type="button" class="btn btn-danger">Delete</a></td>
                         </tr>
                       @endforeach
                     </tbody>
