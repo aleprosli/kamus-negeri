@@ -12,19 +12,19 @@
 
                   <div class="mb-3">
                     <label for="perkataan" class="form-label">Perkataan</label>
-                    <input type="text" name="perkataan" class="form-control" id="perkataan" placeholder="">
+                    <input type="text" name="perkataan" class="form-control" id="perkataan" placeholder="{{ $perkataan->perkataan }}">
                   </div>
                   <div class="mb-3">
                     <label for="perkataan" class="form-label">Maksud</label>
-                    <input type="text" name="maksud" class="form-control" id="maksud" placeholder="">
+                    <input type="text" name="maksud" class="form-control" id="maksud" placeholder="{{ $perkataan->maksud_perkataan }}">
                   </div>
                   <div class="mb-3">
                     <label for="perkataan" class="form-label">Contoh Ayat</label>
-                    <input type="text" name="contohayat" class="form-control" id="contohayat" placeholder="">
+                    <input type="text" name="contohayat" class="form-control" id="contohayat" placeholder="{{ $perkataan->contoh_ayat }}">
                   </div>
                   <div class="mb-3">
                     <label for="perkataan" class="form-label">Bunyi Sebutan</label>
-                    <input type="text" name="bunyisebutan" class="form-control" id="bunyisebutan" placeholder="">
+                    <input type="text" name="maksud_ayat" class="form-control" id="bunyisebutan" placeholder="{{ $perkataan->maksud_ayat }}">
                   </div>
 
                   <div class="mb-3">
